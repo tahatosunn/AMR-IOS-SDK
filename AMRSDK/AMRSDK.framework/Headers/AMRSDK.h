@@ -129,11 +129,6 @@
 + (void)setUserId:(NSString *)userId;
 
 /**
- * Unique user id for reporting purposes
- */
-+ (NSString *)userId;
-
-/**
  * Set virtual currenct delegate for virtual currency events.
  * Virtual currency delegate must be set before using offerwalls.
  * @param delegate An object conforms to <AMRVirtualCurrencyDelegate> protocol.
