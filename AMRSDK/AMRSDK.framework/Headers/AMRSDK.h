@@ -129,6 +129,12 @@
 + (void)setUserId:(NSString *)userId;
 
 /**
+ * You can optionally provide a campaign id.
+ * @param campaignId campaign id.
+ */
++ (void)setClientCampaignId:(NSString *)campaignId;
+
+/**
  * Set virtual currenct delegate for virtual currency events.
  * Virtual currency delegate must be set before using offerwalls.
  * @param delegate An object conforms to <AMRVirtualCurrencyDelegate> protocol.
