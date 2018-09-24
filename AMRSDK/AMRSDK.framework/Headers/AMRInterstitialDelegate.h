@@ -27,8 +27,8 @@
 
 /**
  * Failed to receive an interstitial. Inspect AMRError's errorCode and errorDescription properties to identify the problem.
- * @param interstitial Failed AMRInterstitial object
- * @param error AMRError object with error code and descriptions
+ * @param interstitial Failed AMRInterstitial object.
+ * @param error AMRError object with error code and descriptions.
  */
 - (void)didFailToReceiveInterstitial:(AMRInterstitial *)interstitial error:(AMRError * )error;
 
@@ -36,13 +36,13 @@
 
 /**
  * Successfully shown received interstital.
- * @param interstitial Shown AMRInterstitial object
+ * @param interstitial Shown AMRInterstitial object.
  */
 - (void)didShowInterstitial:(AMRInterstitial *)interstitial;
 
 /**
  * Presented interstital is dismissed. Continue stopped tasks while the interstital ad is present.
- * @param interstitial Dismissed AMRInterstitial object
+ * @param interstitial Dismissed AMRInterstitial object.
  */
 - (void)didDismissInterstitial:(AMRInterstitial *)interstitial;
 
