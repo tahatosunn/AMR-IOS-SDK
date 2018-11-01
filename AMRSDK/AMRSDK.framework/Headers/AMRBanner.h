@@ -31,7 +31,7 @@
  * @code
  * [AMRBanner bannerForZoneId:@"<zoneId>"];
  * @endcode
- * @see https://github.com/admost/AMR/blob/master/IOS_Integration/AMR2.0/README.md for more information.
+ * @see https://admost.github.io/amrios for more information.
  * @param zoneId Your banner's zone ID displayed on AMR Dashboard.
  * @return An instance of AMRBanner created by zoneId provided.
  */

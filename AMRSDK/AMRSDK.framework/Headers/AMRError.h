@@ -11,7 +11,7 @@
 @interface AMRError : NSObject
 /**
  * Error code.
- * @see https://github.com/admost/AMR/blob/master/IOS_Integration/AMR2.0/README.md for more information.
+ * @see https://admost.github.io/amrios for more information.
  */
 @property NSInteger errorCode;
 /**

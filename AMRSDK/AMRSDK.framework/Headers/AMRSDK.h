@@ -30,7 +30,7 @@
  * @code
  * [AMRSDK startWithAppId:@"<appId>"];
  * @endcode
- * @see https://github.com/admost/AMR/blob/master/IOS_Integration/AMR2.0/README.md for more information.
+ * @see https://admost.github.io/amrios for more information.
  * @param appId Your application ID.
  */
 + (void)startWithAppId:(NSString *)appId;
@@ -41,7 +41,7 @@
  * @code
  * [AMRSDK startWithAppId:@"<appId>"];
  * @endcode
- * @see https://github.com/admost/AMR/blob/master/IOS_Integration/AMR2.0/README.md for more information.
+ * @see https://admost.github.io/amrios for more information.
  * @param appId Your application ID.
  * @param initNetworks Bool value to control network initialization
  */

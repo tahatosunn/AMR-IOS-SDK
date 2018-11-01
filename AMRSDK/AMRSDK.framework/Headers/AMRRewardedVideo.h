@@ -26,7 +26,7 @@
  * @code
  * [AMRRewardedVideo rewardedVideoForZoneId:@"<zoneId>"];
  * @endcode
- * @see https://github.com/admost/AMR/blob/master/IOS_Integration/AMR2.0/README.md for more information.
+ * @see https://admost.github.io/amrios for more information.
  * @param zoneId Your rewardedvideo's zone ID displayed on AMR Dashboard.
  * @return An instance of AMRRewardedVideo created by zoneId provided.
  */
@@ -47,9 +47,21 @@
  * @code
  * [rewardedVideo showFromViewController:myViewController];
  * @endcode
- * @see https://github.com/admost/AMR/blob/master/IOS_Integration/AMR2.0/README.md for more information.
+ * @see https://admost.github.io/amrios for more information.
  * @param viewController Your rewardedvideo's presenting viewcontroller.
  */
 - (void)showFromViewController:(UIViewController * )viewController;
+
+/**
+ * Use to show rewardedvideo after delegate callback of AMRRewardedVideoDelegate's didReceiveRewardedVideo method.
+ * Example usage:
+ * @code
+ * [rewardedVideo showFromViewController:myViewController withTag:@"<myTag>"];
+ * @endcode
+ * @see https://admost.github.io/amrios for more information.
+ * @param viewController Your rewardedvideo's presenting viewcontroller.
+ * @param tag Distinction value for ads that used in multiple purposes.
+ */
+- (void)showFromViewController:(UIViewController * )viewController withTag:(NSString *)tag;
 
 @end

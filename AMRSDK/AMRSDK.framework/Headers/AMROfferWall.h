@@ -22,7 +22,7 @@
  * @code
  * [AMROfferWall offerWallForZoneId:@"<zoneId>"];
  * @endcode
- * @see https://github.com/admost/AMR/blob/master/IOS_Integration/AMR2.0/README.md for more information.
+ * @see https://admost.github.io/amrios for more information.
  * @param zoneId Your offerwall's zone ID displayed on AMR Dashboard.
  * @return An instance of AMROfferWall created by zoneId provided.
  */
@@ -43,9 +43,21 @@
  * @code
  * [offerwall showFromViewController:myViewController];
  * @endcode
- * @see https://github.com/admost/AMR/blob/master/IOS_Integration/AMR2.0/README.md for more information.
+ * @see https://admost.github.io/amrios for more information.
  * @param viewController Your offerwall's presenting viewcontroller.
  */
 - (void)showFromViewController:(UIViewController * )viewController;
+
+/**
+ * Use to show offerwall after delegate callback of AMROfferWallDelegate's didReceiveOfferWall method.
+ * Example usage:
+ * @code
+ * [offerwall showFromViewController:myViewController withTag:@"<myTag>"];
+ * @endcode
+ * @see https://admost.github.io/amrios for more information.
+ * @param viewController Your offerwall's presenting viewcontroller.
+ * @param tag Distinction value for ads that used in multiple purposes.
+ */
+- (void)showFromViewController:(UIViewController * )viewController withTag:(NSString *)tag;
 
 @end

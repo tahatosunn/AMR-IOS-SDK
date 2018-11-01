@@ -26,7 +26,7 @@
  * @code
  * [AMRInterstitial interstitialForZoneId:@"<zoneId>"];
  * @endcode
- * @see https://github.com/admost/AMR/blob/master/IOS_Integration/AMR2.0/README.md for more information.
+ * @see https://admost.github.io/amrios for more information.
  * @param zoneId Your interstitial's zone ID displayed on AMR Dashboard.
  * @return An instance of AMRInterstitial created by zoneId provided.
  */
@@ -47,9 +47,21 @@
  * @code
  * [interstitial showFromViewController:myViewController];
  * @endcode
- * @see https://github.com/admost/AMR/blob/master/IOS_Integration/AMR2.0/README.md for more information.
+ * @see https://admost.github.io/amrios for more information.
  * @param viewController Your interstitial's presenting viewcontroller.
  */
 - (void)showFromViewController:(UIViewController * )viewController;
+
+/**
+ * Use to show interstitial after delegate callback of AMRInterstitialDelegate's didReceiveInterstitial method.
+ * Example usage:
+ * @code
+ * [interstitial showFromViewController:myViewController withTag:@"<myTag>"];
+ * @endcode
+ * @see https://admost.github.io/amrios for more information.
+ * @param viewController Your interstitial's presenting viewcontroller.
+ * @param tag Distinction value for ads that used in multiple purposes.
+ */
+- (void)showFromViewController:(UIViewController * )viewController withTag:(NSString *)tag;
 
 @end
