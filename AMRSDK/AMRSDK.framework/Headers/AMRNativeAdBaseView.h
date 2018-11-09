@@ -39,6 +39,7 @@ extern NSString * const kAMRNativeAssetKeyClickURL;
 @property (nonatomic, weak) IBOutlet UIImageView *IMGCoverBG;
 @property (nonatomic, weak) IBOutlet UIImageView *IMGPrivacyIcon;
 @property (nonatomic, weak) IBOutlet UIButton *BTNClick;
+@property (nonatomic, weak) IBOutlet UIButton *BTNClickFB;
 @property (nonatomic, weak) IBOutlet UIView *trackingView;
 @property (nonatomic, assign) AMRBannerSize bannerSize;
 @property (nonatomic, weak) id<AMRNativeAdBaseViewDelegate> delegate;
