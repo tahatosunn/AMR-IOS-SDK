@@ -43,8 +43,16 @@
 /**
  * Failed to show rewarded video. This delegate expected to be called very rarely.
  * @param rewardedVideo Failed AMRRewardedVideo object.
+ * @param error AMRError object with error code and descriptions.
  */
-- (void)didFailToShowRewardedVideo:(AMRRewardedVideo *)rewardedVideo;
+- (void)didFailToShowRewardedVideo:(AMRRewardedVideo *)rewardedVideo error:(AMRError *)error;
+
+/**
+ * @deprecated This method is deprecated starting in version 1.3.84
+ * Failed to show rewarded video. This delegate expected to be called very rarely.
+ * @param rewardedVideo Failed AMRRewardedVideo object.
+ */
+- (void)didFailToShowRewardedVideo:(AMRRewardedVideo *)rewardedVideo __attribute__((deprecated));
 
 /**
  * Presented rewardedvideo is dismissed. Continue stopped tasks while the rewardedvideo ad is present. Called after didCompleteRewardedVideo delegate callback.

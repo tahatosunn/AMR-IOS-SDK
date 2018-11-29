@@ -32,6 +32,21 @@
  */
 - (void)didFailToReceiveOfferWall:(AMROfferWall *)offerwall error:(AMRError * )error;
 
+@optional
+
+/**
+ * Successfully shown received offerwall.
+ * @param offerwall Shown AMROfferWall object.
+ */
+- (void)didShowOfferWall:(AMROfferWall *)offerwall;
+
+/**
+ * Failed to show offerwall. This delegate expected to be called very rarely.
+ * @param offerwall Failed AMROfferWall object.
+ * @param error AMRError object with error code and descriptions.
+ */
+- (void)didFailToShowOfferWall:(AMROfferWall *)offerwall error:(AMRError *)error;
+
 /**
  * Presented offerwall is dismissed. Continue stopped tasks while the offerwall ad is present.
  * @param offerwall Dismissed AMROfferWall object

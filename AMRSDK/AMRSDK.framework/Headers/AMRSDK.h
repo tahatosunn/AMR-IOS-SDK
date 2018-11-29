@@ -129,6 +129,16 @@
 + (void)setUserId:(NSString *)userId;
 
 /**
+ * You can optionally provide Adjust unique user id for reporting purposes.
+ * Example usage:
+ * @code
+ * [AMRSDK setAdjustUserId:@"myUniqueAdjustUserId"];
+ * @endcode
+ * @param adjustUserId unique Adjust id.
+ */
++ (void)setAdjustUserId:(NSString *)adjustUserId;
+
+/**
  * You can optionally provide a campaign id.
  * @param campaignId campaign id.
  */

@@ -41,6 +41,13 @@
 - (void)didShowInterstitial:(AMRInterstitial *)interstitial;
 
 /**
+ * Failed to show interstitial. This delegate expected to be called very rarely.
+ * @param interstitial Failed AMRInterstitial object.
+ * @param error AMRError object with error code and descriptions.
+ */
+- (void)didFailToShowInterstitial:(AMRInterstitial *)interstitial error:(AMRError *)error;
+
+/**
  * Presented interstital is dismissed. Continue stopped tasks while the interstital ad is present.
  * @param interstitial Dismissed AMRInterstitial object.
  */
