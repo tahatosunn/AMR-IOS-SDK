@@ -27,6 +27,7 @@ extern NSString * const kAMRNativeAssetKeyIconImage;
 extern NSString * const kAMRNativeAssetKeyCoverImage;
 extern NSString * const kAMRNativeAssetKeyPrivacyImage;
 extern NSString * const kAMRNativeAssetKeyPrivacyImageName;
+extern NSString * const kAMRNativeAssetKeyPrivacyImageView;
 extern NSString * const kAMRNativeAssetKeyClickURL;
 
 @interface AMRNativeAdBaseView : UIView
