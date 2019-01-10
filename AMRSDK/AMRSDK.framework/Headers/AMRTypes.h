@@ -185,7 +185,10 @@ typedef NS_ENUM(NSInteger, AMRNetworkType){
     AMRNetworkTypeYouappi,
 
     //Appsamurai
-    AMRNetworkTypeAppsamurai
+    AMRNetworkTypeAppsamurai,
+
+    //Mintegral
+    AMRNetworkTypeMintegral
 };
 
 typedef NS_ENUM(NSInteger, AMRReachabilityNetworkStatus){

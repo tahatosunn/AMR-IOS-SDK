@@ -145,6 +145,11 @@
 + (void)setClientCampaignId:(NSString *)campaignId;
 
 /**
+ * Get user data in JSON format after AMRSDK initialization.
+ */
++ (NSString *)userData;
+
+/**
  * Set virtual currenct delegate for virtual currency events.
  * Virtual currency delegate must be set before using offerwalls.
  * @param delegate An object conforms to <AMRVirtualCurrencyDelegate> protocol.
