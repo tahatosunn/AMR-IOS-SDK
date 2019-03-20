@@ -20,6 +20,9 @@
 /// Returns YES if the rewarded video is loaded.
 @property (nonatomic, readonly) BOOL isLoaded;
 
+/// Parameter to move your custom data.
+@property (nonatomic, strong) NSDictionary *customData;
+
 /**
  * Create an instance of AMRRewardedVideo to show in your application.
  * Example usage:

@@ -21,6 +21,9 @@
 // Code: 1083 - NoAd Ad policy defined for tag.
 // Code: 1084 - Frequency capping full for tag.
 // Code: 1085 - Ad is not ready to show.
+// Code: 1086 - Invalid zoneId.
+// Code: 1087 - Invalid appId.
+// Code: 1088 - AppId and zoneId does not match.
 
 @interface AMRError : NSObject
 /**

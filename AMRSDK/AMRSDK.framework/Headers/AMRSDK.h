@@ -44,9 +44,10 @@
  * @see https://admost.github.io/amrios for more information.
  * @param appId Your application ID.
  * @param initNetworks Bool value to control network initialization
+ * @note Please use @code startWithAppId: @endcode instead.
  */
 
-+ (void)startWithAppId:(NSString *)appId shouldInitNetworks:(BOOL)initNetworks;
++ (void)startWithAppId:(NSString *)appId shouldInitNetworks:(BOOL)initNetworks __attribute__((deprecated));
 
 /**
  * Init networks to start cacheing banners.
@@ -105,8 +106,10 @@
  * [AMRSDK preloadBannersWithZoneIds:@[<zoneId1>,<zoneId2>]];
  * @endcode
  * @param zoneIds NSArray with zoneIds string objects.
+ * @note Please use AMRBanner @code cacheBanner: @endcode instead.
  */
-+ (void)preloadBannersWithZoneIds:(NSArray *)zoneIds;
+
++ (void)preloadBannersWithZoneIds:(NSArray *)zoneIds __attribute__((deprecated));
 
 /// Get current SDK version
 + (NSString *)SDKVersion;
@@ -115,7 +118,7 @@
 + (BOOL)isStatusBarHidden;
 
 /// Check if the networks will initialize
-+ (BOOL)isInitNetworks;
++ (BOOL)isInitNetworks __attribute__((deprecated));
 
 /**
  * You can optionally provide a unique user id for reporting purposes.
