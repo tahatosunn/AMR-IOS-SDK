@@ -191,7 +191,10 @@ typedef NS_ENUM(NSInteger, AMRNetworkType){
     AMRNetworkTypeMintegral,
 
     /// MY TARGET
-    AMRNetworkTypeMyTarget
+    AMRNetworkTypeMyTarget,
+
+    /// YANDEX
+    AMRNetworkTypeYandex
 };
 
 typedef NS_ENUM(NSInteger, AMRReachabilityNetworkStatus){
