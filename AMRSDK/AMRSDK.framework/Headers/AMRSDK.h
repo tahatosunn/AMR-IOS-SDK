@@ -20,7 +20,7 @@
 #import "AMROfferWall.h"
 #import "AMRNativeAdBaseView.h"
 
-@protocol AMRVirtualCurrencyDelegate;
+@protocol AMRVirtualCurrencyDelegate, AMRTrackPurchaseResponseDelegate;
 
 @interface AMRSDK : NSObject
 
@@ -185,6 +185,12 @@
                amount:(double)amount;
 
 /**
+ * Set track purchase response delegate for track purchase upload responses.
+ * @param delegate An object conforms to <AMRTrackPurchaseResponseDelegate> protocol.
+ */
++ (void)setTrackPurchaseResponseDelegate:(id<AMRTrackPurchaseResponseDelegate>)delegate;
+
+/**
  * Start Test Suite
  * You must be a Tester to show Test Suite on devices.
  * @param appId Your application ID.
@@ -197,6 +203,11 @@
  * @param zones List of Zone ids.
  */
 + (void)startTestSuiteWithZones:(NSArray *)zones;
+
+/**
+ */
+
++ (void)isGDPRApplicable:(void (^)(BOOL isGDPRApplicable))completion;
 
 /**
  * We specified your responsibilities for obtaining consent from end-users of your apps in our updated Privacy Policy.
@@ -241,5 +252,17 @@
 - (void)didSpendVirtualCurrency:(NSString *)currency
                           amout:(NSNumber *)amount
                         network:(AMRNetworkType)network __attribute__((deprecated));
+
+@end
+
+@protocol AMRTrackPurchaseResponseDelegate <NSObject>
+
+@optional
+/**
+ * Response for trackPurchase method.
+ * @param identifier Transaction identifier of SKPaymentTransaction
+ * @param status response status of in app purchase.
+ */
+- (void)trackPurchaseResponse:(NSString *)identifier status:(AMRTrackPurchaseResponseStatus)status;
 
 @end

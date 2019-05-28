@@ -208,4 +208,15 @@ typedef NS_ENUM(NSInteger, AMRReachabilityNetworkStatus){
     AMRReachabilityNetworkStatusViaWWAN,
 };
 
+typedef NS_ENUM(NSInteger, AMRTrackPurchaseResponseStatus){
+    /// In app purchase uploaded successfuly
+    AMRTrackPurchaseResponseStatusSuccess = 0,
+
+    /// In app purchase upload failed, AMRSDK will try to upload again.
+    AMRTrackPurchaseResponseStatusFail = 1,
+
+    /// Invalid in app purchase
+    AMRTrackPurchaseResponseStatusException
+};
+
 #endif /* AMRTypes_h */
