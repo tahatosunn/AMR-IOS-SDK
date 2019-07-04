@@ -12,6 +12,7 @@
 // Code: 501 - AMRSDK could not initialized!
 // Code: -1 - All placements returned no fill or timeouted!.
 // Code: -1 - Server returned status code.
+// Code: -2 - No internet connection.
 // Code: 1077 - Waterfall result returned -1 for zone.
 // Code: 1078 - Frequency capping is filled for zone.
 // Code: 1079 - No Internet Connection.

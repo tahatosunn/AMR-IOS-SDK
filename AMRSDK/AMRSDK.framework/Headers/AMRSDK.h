@@ -20,7 +20,11 @@
 #import "AMROfferWall.h"
 #import "AMRNativeAdBaseView.h"
 
+typedef void(^AMRInitCompletionHandler)(AMRError *_Nullable error);
+
 @protocol AMRVirtualCurrencyDelegate, AMRTrackPurchaseResponseDelegate;
+
+NS_ASSUME_NONNULL_BEGIN
 
 @interface AMRSDK : NSObject
 
@@ -34,6 +38,14 @@
  * @param appId Your application ID.
  */
 + (void)startWithAppId:(NSString *)appId;
+
+/**
+ * Start AMRSDK with your application ID displayed on AMR Dashboard.
+ * @see https://admost.github.io/amrios for more information.
+ * @param appId Your application ID.
+ * @param completion Completion block for init response.
+ */
++ (void)startWithAppId:(NSString *)appId completion:(_Nullable AMRInitCompletionHandler)completion;
 
 /**
  * Start AMRSDK with your application ID displayed on AMR Dashboard and use initNetworks bool value to control network initialization.
@@ -266,3 +278,5 @@
 - (void)trackPurchaseResponse:(NSString *)identifier status:(AMRTrackPurchaseResponseStatus)status;
 
 @end
+
+NS_ASSUME_NONNULL_END
