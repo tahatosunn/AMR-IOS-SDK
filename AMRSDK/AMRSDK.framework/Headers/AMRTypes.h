@@ -39,10 +39,10 @@ typedef NS_ENUM(NSInteger, AMRBannerSize){
     /// 320+ x 50
     AMRBannerSizeHeight50 = 0,
 
-    /// 320+ x 90
+    /// 728+ x 90 (Tablet Size)
     AMRBannerSizeHeight90,
 
-    /// 320+ x 250
+    /// 300+ x 250
     AMRBannerSizeHeight250,
 };
 
