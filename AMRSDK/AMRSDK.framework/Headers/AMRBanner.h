@@ -18,7 +18,7 @@
 @property AMRBannerView *bannerView;
 /// A parent UIViewController required to catch taps.
 @property UIViewController *viewController;
-/// Width value of banner, default is screen width. 
+/// Width value of banner, default is 320px for 50px, 300px for 250px, 728px for 90px.
 @property (nonatomic) CGFloat bannerWidth;
 /// Custom size for custom native ads
 @property (nonatomic) CGSize customNativeSize;

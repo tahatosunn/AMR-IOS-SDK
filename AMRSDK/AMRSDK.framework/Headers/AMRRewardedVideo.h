@@ -23,6 +23,9 @@
 /// Parameter to move your custom data.
 @property (nonatomic, strong) NSDictionary *customData;
 
+/// Server Key for server to server.
+@property (nonatomic, strong) NSString *ssvServerKey;
+
 /**
  * Create an instance of AMRRewardedVideo to show in your application.
  * Example usage:
