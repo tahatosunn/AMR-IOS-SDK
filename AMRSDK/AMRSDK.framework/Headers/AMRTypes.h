@@ -197,7 +197,10 @@ typedef NS_ENUM(NSInteger, AMRNetworkType){
     AMRNetworkTypeYandex,
 
     /// TAPRESEARCH
-    AMRNetworkTypeTapResearch
+    AMRNetworkTypeTapResearch,
+    
+    /// QUMPARA
+    AMRNetworkTypeQumpara
 };
 
 typedef NS_ENUM(NSInteger, AMRReachabilityNetworkStatus){

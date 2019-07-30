@@ -48,6 +48,12 @@
 - (void)didFailToShowInterstitial:(AMRInterstitial *)interstitial error:(AMRError *)error;
 
 /**
+ * User clicked interstital.
+ * @param interstitial Clicked AMRInterstitial object.
+ */
+- (void)didClickInterstitial:(AMRInterstitial *)interstitial;
+
+/**
  * Presented interstital is dismissed. Continue stopped tasks while the interstital ad is present.
  * @param interstitial Dismissed AMRInterstitial object.
  */

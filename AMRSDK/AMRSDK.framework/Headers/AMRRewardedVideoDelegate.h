@@ -55,15 +55,21 @@
 - (void)didFailToShowRewardedVideo:(AMRRewardedVideo *)rewardedVideo __attribute__((deprecated));
 
 /**
- * Presented rewardedvideo is dismissed. Continue stopped tasks while the rewardedvideo ad is present. Called after didCompleteRewardedVideo delegate callback.
- * @param rewardedVideo Dismissed AMRRewardedVideo object.
+ * User clicked rewarded video.
+ * @param rewardedVideo Clicked AMRRewardedVideo object.
  */
-- (void)didDismissRewardedVideo:(AMRRewardedVideo *)rewardedVideo;
+- (void)didClickRewardedVideo:(AMRRewardedVideo *)rewardedVideo;
 
 /**
  * User watched rewarded video till end. User can get the reward.
  * @param rewardedVideo AMRRewardedVideo object.
  */
 - (void)didCompleteRewardedVideo:(AMRRewardedVideo *)rewardedVideo;
+
+/**
+ * Presented rewardedvideo is dismissed. Continue stopped tasks while the rewardedvideo ad is present. Called after didCompleteRewardedVideo delegate callback.
+ * @param rewardedVideo Dismissed AMRRewardedVideo object.
+ */
+- (void)didDismissRewardedVideo:(AMRRewardedVideo *)rewardedVideo;
 
 @end
