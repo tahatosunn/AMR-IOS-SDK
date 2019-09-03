@@ -8,35 +8,61 @@
 
 #import <Foundation/Foundation.h>
 
-// Code: 500 - No server response.
-// Code: 501 - AMRSDK could not initialized!
-// Code: -1 - All placements returned no fill or timeouted!.
-// Code: -1 - Server returned status code.
-// Code: -2 - No internet connection.
-// Code: 1077 - Waterfall result returned -1 for zone.
-// Code: 1078 - Frequency capping is filled for zone.
-// Code: 1079 - No Internet Connection.
-// Code: 1080 - No placements found for zone.
-// Code: 1081 - Tag disabled for zone.
-// Code: 1082 - NoAd Ad policy defined for zone.
-// Code: 1083 - NoAd Ad policy defined for tag.
-// Code: 1084 - Frequency capping full for tag.
-// Code: 1085 - Ad is not ready to show.
-// Code: 1086 - Invalid zoneId.
-// Code: 1087 - Invalid appId.
-// Code: 1088 - AppId and zoneId does not match.
+typedef NS_ENUM(NSInteger, AMRErrorCode) {
+    AMRErrorCodeUnknownError = 0,
+    
+    /** No server response. */
+    AMRErrorCodeServerError = 500,
+    
+    /** All placements returned no fill or timeouted! */
+    AMRErrorCodeAdRequestFailed = -1,
+    
+    /** No placements found for zone. */
+    AMRErrorCodeNoPlacementFound = 1077,
+    
+    /** Frequency capping is filled for zone. */
+    AMRErrorCodeFrequencyCappingFilled = 1078,
+    
+    /** No Internet Connection. */
+    AMRErrorCodeNoInternetConnection = 1079,
+    
+    /** Tag disabled for zone. */
+    AMRErrorCodeTagDisabled = 1081,
+    
+    /** NoAd Ad policy found for zone. */
+    AMRErrorCodeNoAdPolicyFoundForZone = 1082,
+    
+    /** NoAd Ad policy found for tag. */
+    AMRErrorCodeNoAdPolicyFoundForTag = 1083,
+    
+    /** Frequency capping is filled for tag. */
+    AMRErrorCodeFrequencyCappingFilledForTag = 1084,
+    
+    /** Ad is not ready to show. */
+    AMRErrorCodeAdNotReady = 1085,
+    
+    /** Invalid zoneId. */
+    AMRErrorCodeInvalidZoneId = 1086,
+    
+    /** Invalid appId. */
+    AMRErrorCodeInvalidAppId = 1087,
+    
+    /** AppId and zoneId does not match. */
+    AMRErrorCodeMismatchZoneId = 1088,
+    
+};
 
 @interface AMRError : NSObject
 /**
  * Error code.
  * @see https://admost.github.io/amrios for more information.
  */
-@property NSInteger errorCode;
+@property AMRErrorCode errorCode;
 /**
  * Description of error.
  */
-@property NSString *errorDescription;
+@property (readonly) NSString *errorDescription;
 
 + (instancetype)errorWithError:(NSError *)error;
-+ (instancetype)errorWithCode:(NSInteger)code detail:(NSString *)detail;
++ (instancetype)errorWithCode:(AMRErrorCode)code detail:(NSString *)detail;
 @end

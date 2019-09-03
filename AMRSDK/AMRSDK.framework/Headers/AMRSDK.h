@@ -160,6 +160,13 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setClientCampaignId:(NSString *)campaignId;
 
 /**
+ * You can optionally pass data to Ad networks.
+ * @param value object you want to pass.
+ * @param key key for value.
+ */
++ (void)setNetworkExtras:(id)value forKey:(AMRNetworkExtras)key;
+
+/**
  * Get user data in JSON format after AMRSDK initialization.
  */
 + (NSString *)userData;
@@ -217,6 +224,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)startTestSuiteWithZones:(NSArray *)zones;
 
 /**
+ * You can optionally use isGDPRApplicable method to obtain the user is in a GDPR required country.
  */
 
 + (void)isGDPRApplicable:(void (^)(BOOL isGDPRApplicable))completion;

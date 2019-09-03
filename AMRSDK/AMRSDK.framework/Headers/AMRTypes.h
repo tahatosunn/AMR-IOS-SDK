@@ -225,4 +225,15 @@ typedef NS_ENUM(NSInteger, AMRTrackPurchaseResponseStatus){
     AMRTrackPurchaseResponseStatusException
 };
 
+typedef NS_ENUM(NSInteger, AMRNetworkExtras){
+    /// Unknown parameter
+    AMRNetworkExtrasUnknown = 0,
+    
+    /// AdMob - tagForChildDirectedTreatment
+    AMRNetworkExtrasAdMobTagForChildDirectedTreatment = 1,
+    
+    /// AdMob - tagForUnderAgeOfConsent
+    AMRNetworkExtrasAdMobTagForUnderAgeOfConsent = 2
+};
+
 #endif /* AMRTypes_h */
