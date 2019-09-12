@@ -200,7 +200,10 @@ typedef NS_ENUM(NSInteger, AMRNetworkType){
     AMRNetworkTypeTapResearch,
     
     /// QUMPARA
-    AMRNetworkTypeQumpara
+    AMRNetworkTypeQumpara,
+    
+    /// TIKTOK
+    AMRNetworkTypeTikTok
 };
 
 typedef NS_ENUM(NSInteger, AMRReachabilityNetworkStatus){
