@@ -203,7 +203,13 @@ typedef NS_ENUM(NSInteger, AMRNetworkType){
     AMRNetworkTypeQumpara,
     
     /// TIKTOK
-    AMRNetworkTypeTikTok
+    AMRNetworkTypeTikTok,
+    
+    /// CRITEO
+    AMRNetworkTypeCriteo,
+    
+    /// HYPRMX
+    AMRNetworkTypeHyprMX
 };
 
 typedef NS_ENUM(NSInteger, AMRReachabilityNetworkStatus){
