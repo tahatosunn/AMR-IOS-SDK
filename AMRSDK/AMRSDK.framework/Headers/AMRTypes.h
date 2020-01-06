@@ -209,7 +209,10 @@ typedef NS_ENUM(NSInteger, AMRNetworkType){
     AMRNetworkTypeCriteo,
     
     /// HYPRMX
-    AMRNetworkTypeHyprMX
+    AMRNetworkTypeHyprMX,
+    
+    /// A4G
+    AMRNetworkTypeA4G,
 };
 
 typedef NS_ENUM(NSInteger, AMRReachabilityNetworkStatus){
