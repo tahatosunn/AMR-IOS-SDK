@@ -112,7 +112,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * Warning: Only applies to non-fullscreen banners.
  * Preload banners in spesific zones to show instantly when they are needed to be shown.
- * Pass your zone IDs displayed on AMR Dashboard to preload banners.
+ * Pass your zone Ids displayed on AMR Dashboard to preload banners.
  * Example usage:
  * @code
  * [AMRSDK preloadBannersWithZoneIds:@[<zoneId1>,<zoneId2>]];
