@@ -167,6 +167,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setNetworkExtras:(id)value forKey:(AMRNetworkExtras)key;
 
 /**
+ * You can optionally pass userChild parameter to Ad networks.
+ * @param userChild object you want to pass.
+ */
++ (void)setUserChild:(BOOL)userChild;
+
+/**
  * Get user data in JSON format after AMRSDK initialization.
  */
 + (NSString *)userData;
