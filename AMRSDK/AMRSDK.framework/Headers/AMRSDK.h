@@ -173,6 +173,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setUserChild:(BOOL)userChild;
 
 /**
+ * useHttps is in closed beta and available invite only.
+ * @param useHttps object to force sdk to make https requests.
+ */
++ (void)setUseHttps:(BOOL)useHttps;
+
+/**
  * Get user data in JSON format after AMRSDK initialization.
  */
 + (NSString *)userData;
