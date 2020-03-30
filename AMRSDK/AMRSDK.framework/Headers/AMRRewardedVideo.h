@@ -23,6 +23,9 @@
 /// Parameter to move your custom data.
 @property (nonatomic, strong) NSDictionary *customData;
 
+/// Parameter to set reward amount.
+@property (nonatomic, assign) CGFloat completionReward;
+
 /// Server Key for server to server.
 @property (nonatomic, strong) NSString *ssvServerKey;
 
