@@ -216,6 +216,18 @@ NS_ASSUME_NONNULL_BEGIN
                amount:(double)amount;
 
 /**
+ * Track in-app purchase is in closed beta and available invite only.
+ * @param identifier Transaction identifier of SKPaymentTransaction
+ * @param currencyCode Currency code of transaction
+ * @param amount Amount of transaction
+ * @param tags Distinction value for in-app purchase that used in multiple purposes.
+ */
++ (void)trackIAP:(NSString *)identifier
+    currencyCode:(NSString *)currencyCode
+          amount:(double)amount
+            tags:(NSArray *)tags;
+
+/**
  * Set track purchase response delegate for track purchase upload responses.
  * @param delegate An object conforms to <AMRTrackPurchaseResponseDelegate> protocol.
  */
