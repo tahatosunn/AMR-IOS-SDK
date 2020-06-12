@@ -24,6 +24,8 @@
 @property (nonatomic) CGSize customNativeSize;
 /// Custom native ad xib name
 @property NSString *customeNativeXibName;
+/// Custom native ad duration in seconds
+@property (nonatomic, readonly) NSInteger customNativeDuration;
 
 /**
  * Create an instance of AMRBanner to show in your application.
@@ -62,5 +64,20 @@
 
 // start caching banner
 - (void)cacheBanner;
+
+/**
+* Trigger click action manually for custom native banners
+*/
+- (void)triggerCallToActionForCustomNativeBanner;
+
+/**
+* Play video ad manually for custom native banners
+*/
+- (void)playForCustomNativeBanner;
+
+/**
+* Pause video ad manually for custom native banners
+*/
+- (void)pauseForCustomNativeBanner;
 
 @end
