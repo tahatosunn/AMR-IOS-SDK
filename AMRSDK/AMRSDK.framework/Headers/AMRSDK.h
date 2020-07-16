@@ -244,15 +244,23 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)startTestSuiteWithZones:(NSArray *)zones;
 
 /**
+ * @deprecated This method is deprecated please use isPrivacyConsentRequired method instead.
  * You can optionally use isGDPRApplicable method to obtain the user is in a GDPR required country.
  */
 
-+ (void)isGDPRApplicable:(void (^)(BOOL isGDPRApplicable))completion;
++ (void)isGDPRApplicable:(void (^)(BOOL isGDPRApplicable))completion __attribute__((deprecated));
+
+/**
+ * You can optionally use isPrivacyConsentRequired method to obtain the user is in a GDPR or CCPA required country.
+ */
+
++ (void)isPrivacyConsentRequired:(void (^)(AMRPrivacyConsentStatus consentStatus))completion;
 
 /**
  * We specified your responsibilities for obtaining consent from end-users of your apps in our updated Privacy Policy.
- * By updating GDPR compatible SDK you agree that you’re responsible for inform the end users and take their consent.
- * Please note that the consent collection applies only to users located in the European Economic Area, the United Kingdom, and Switzerland.
+ * By updating GDPR or CCPA compatible SDK you agree that you’re responsible for inform the end users and take their consent.
+ * Please note that the GDPR consent collection applies only to users located in the European Economic Area, the United Kingdom, and Switzerland.
+ * Please note that the CCPA consent collection applies only to users located in the California..
  * The setUserConsent method takes either NO (user does not consent) or YES (user does consent).
  * @param consent of the user.
  */
@@ -264,6 +272,13 @@ NS_ASSUME_NONNULL_BEGIN
  * @param subject for GDPR.
  */
 + (void)subjectToGDPR:(BOOL)subject;
+
+/**
+ * You can optionally use subjectToCCPA method to set CCPA applicable to the user or not.
+ * If you do not provide this information AMRSDK will use its own methods.
+ * @param subject for GDPR.
+ */
++ (void)subjectToCCPA:(BOOL)subject;
 
 @end
 

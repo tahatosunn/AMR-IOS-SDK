@@ -254,4 +254,15 @@ typedef NS_ENUM(NSInteger, AMRNetworkExtras){
     AMRNetworkExtrasAdMobTagForUnderAgeOfConsent = 2
 };
 
+typedef NS_ENUM(NSInteger, AMRPrivacyConsentStatus) {
+    /// Consent not required.
+    AMRPrivacyConsentStatusNone = 0,
+    
+    /// GDPR consent required.
+    AMRPrivacyConsentStatusGDPR = 1,
+    
+    /// CCPA consent required.
+    AMRPrivacyConsentStatusCCPA = 2
+};
+
 #endif /* AMRTypes_h */
