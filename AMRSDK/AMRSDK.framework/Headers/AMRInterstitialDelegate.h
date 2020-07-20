@@ -59,4 +59,11 @@
  */
 - (void)didDismissInterstitial:(AMRInterstitial *)interstitial;
 
+/**
+ * Intersitital state changed.
+ * @param interstitial AMRInterstitial object.
+ * @param state AMRInterstitial new state.
+ */
+- (void)didInterstitialStateChanged:(AMRInterstitial *)interstitial state:(AMRAdState)state;
+
 @end

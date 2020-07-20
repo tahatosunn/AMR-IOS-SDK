@@ -265,4 +265,12 @@ typedef NS_ENUM(NSInteger, AMRPrivacyConsentStatus) {
     AMRPrivacyConsentStatusCCPA = 2
 };
 
+typedef NS_ENUM(NSInteger, AMRAdState) {
+    /// Ad state is unknown.
+    AMRAdStateUnknown = 0,
+    
+    /// Frequency cap is finished.
+    AMRAdStateFrequencyCapFinished = 1
+};
+
 #endif /* AMRTypes_h */

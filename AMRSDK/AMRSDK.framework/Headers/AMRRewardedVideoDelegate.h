@@ -67,9 +67,16 @@
 - (void)didCompleteRewardedVideo:(AMRRewardedVideo *)rewardedVideo;
 
 /**
- * Presented rewardedvideo is dismissed. Continue stopped tasks while the rewardedvideo ad is present. Called after didCompleteRewardedVideo delegate callback.
+ * Presented rewarded video is dismissed. Continue stopped tasks while the rewardedvideo ad is present. Called after didCompleteRewardedVideo delegate callback.
  * @param rewardedVideo Dismissed AMRRewardedVideo object.
  */
 - (void)didDismissRewardedVideo:(AMRRewardedVideo *)rewardedVideo;
+
+/**
+ * Rewarded video state changed.
+ * @param rewardedVideo AMRRewardedVideo object.
+ * @param state AMRRewardedVideo new state.
+ */
+- (void)didRewardedVideoStateChanged:(AMRRewardedVideo *)rewardedVideo state:(AMRAdState)state;
 
 @end
