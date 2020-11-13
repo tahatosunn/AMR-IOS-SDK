@@ -63,19 +63,4 @@
 // start caching banner
 - (void)cacheBanner;
 
-/**
-* Trigger click action manually for custom native banners
-*/
-- (void)triggerCallToActionForCustomNativeBanner;
-
-/**
-* Play video ad manually for custom native banners
-*/
-- (void)playForCustomNativeBanner;
-
-/**
-* Pause video ad manually for custom native banners
-*/
-- (void)pauseForCustomNativeBanner;
-
 @end
