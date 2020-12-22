@@ -19,6 +19,7 @@
 #import "AMROfferWallDelegate.h"
 #import "AMROfferWall.h"
 #import "AMRNativeAdBaseView.h"
+#import "AMRUserExperiment.h"
 
 typedef void(^AMRInitCompletionHandler)(AMRError *_Nullable error);
 
@@ -178,6 +179,11 @@ NS_ASSUME_NONNULL_BEGIN
  * Get user data in JSON format after AMRSDK initialization.
  */
 + (NSString *)userData;
+
+/**
+ * Get user experiment data after AMRSDK initialization.
+ */
++ (AMRUserExperiment *)userExperiment;
 
 /**
  * Set virtual currenct delegate for virtual currency events.

@@ -218,7 +218,13 @@ typedef NS_ENUM(NSInteger, AMRNetworkType){
     AMRNetworkTypeA4G,
     
     /// ADVIEW
-    AMRNetworkTypeAdView
+    AMRNetworkTypeAdView,
+    
+    /// REKLAMUP
+    AMRNetworkTypeReklamUP,
+    
+    /// ADREACT
+    AMRNetworkTypeAdreact
 };
 
 typedef NS_ENUM(NSInteger, AMRReachabilityNetworkStatus){
