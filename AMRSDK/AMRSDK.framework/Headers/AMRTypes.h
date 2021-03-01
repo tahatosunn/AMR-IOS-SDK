@@ -224,7 +224,13 @@ typedef NS_ENUM(NSInteger, AMRNetworkType){
     AMRNetworkTypeReklamUP,
     
     /// ADREACT
-    AMRNetworkTypeAdreact
+    AMRNetworkTypeAdreact,
+    
+    /// VERIZON
+    AMRNetworkTypeVerizon,
+    
+    /// NOKTA
+    AMRNetworkTypeNokta
 };
 
 typedef NS_ENUM(NSInteger, AMRReachabilityNetworkStatus){
