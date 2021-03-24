@@ -273,6 +273,16 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setUserConsent:(BOOL)consent;
 
 /**
+ * We specified your responsibilities for obtaining consent from end-users of your apps in our updated Privacy Policy.
+ * By updating GDPR or CCPA compatible SDK you agree that you’re responsible for inform the end users and take their consent.
+ * Please note that the GDPR consent collection applies only to users located in the European Economic Area, the United Kingdom, and Switzerland.
+ * Please note that the CCPA consent collection applies only to users located in the California..
+ * The setTCFConsent method takes either NO (user does not consent) or YES (user does consent).
+ * @param vendors consent of the user for vendors.
+ */
++ (void)setTCFVendors:(NSDictionary *)vendors;
+
+/**
  * You can optionally use subjectToGDPR method to set GDPR applicable to the user or not.
  * If you do not provide this information AMRSDK will use its own methods.
  * @param subject for GDPR.
