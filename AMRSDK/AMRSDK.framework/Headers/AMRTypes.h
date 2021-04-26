@@ -69,6 +69,9 @@ typedef NS_ENUM(NSInteger, AMRNetworkType){
     
     /// ADX
     AMRNetworkTypeAdX,
+    
+    /// AFA
+    AMRNetworkTypeAFA,
 
     /// AMAZON
     AMRNetworkTypeAmazon,

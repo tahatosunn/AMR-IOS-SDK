@@ -236,18 +236,21 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setTrackPurchaseResponseDelegate:(id<AMRTrackPurchaseResponseDelegate>)delegate;
 
 /**
- * Start Test Suite
- * You must be a Tester to show Test Suite on devices.
- * @param appId Your application ID.
+ * @deprecated This method is deprecated please use startTesterInfoWithAppId method instead.
  */
-+ (void)startTestSuiteWithAppId:(NSString *)appId;
++ (void)startTestSuiteWithAppId:(NSString *)appId __attribute__((deprecated));
 
 /**
- * Start Test Suite
- * You must be a Tester to show Test Suite on devices.
- * @param zones List of Zone ids.
+ * @deprecated This method is deprecated please use startTesterInfoWithAppId method instead.
  */
-+ (void)startTestSuiteWithZones:(NSArray *)zones;
++ (void)startTestSuiteWithZones:(NSArray *)zones __attribute__((deprecated));
+
+/**
+ * Start Tester Info
+ * You must be a Tester to show Tester Info on devices.
+ * @param appId Your application ID.
+ */
++ (void)startTesterInfoWithAppId:(NSString *)appId;
 
 /**
  * @deprecated This method is deprecated please use isPrivacyConsentRequired method instead.
