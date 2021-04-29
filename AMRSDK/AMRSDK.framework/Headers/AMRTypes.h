@@ -126,6 +126,9 @@ typedef NS_ENUM(NSInteger, AMRNetworkType){
     
     /// LEADBOLT
     AMRNetworkTypeLeadbolt,
+    
+    /// LIFTOFF
+    AMRNetworkTypeLiftoff,
 
     /// LOOPME
     AMRNetworkTypeLoopme,
