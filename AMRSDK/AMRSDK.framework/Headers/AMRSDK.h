@@ -85,19 +85,6 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)setLogLevel:(AMRLogLevel)logLevel;
 
 /**
- * Set status bar hidden status of AMRSDK to set the status bar.
- * visible after a full screen ad is dismissed. Recommended for full screen games.
- * Default value is NO.
- * Example usage:
- * @code
- * [AMRSDK setStatusBarHidden:YES];
- * @endcode
- * @param isHidden hidden status of status bar.
- */
-+ (void)setStatusBarHidden:(BOOL)isHidden;
-
-
-/**
  * Set this value to YES to clear cache on application termination.
  * Default value is NO.
  * Following file types will be deleted from application's cache folder.
@@ -110,28 +97,8 @@ NS_ASSUME_NONNULL_BEGIN
 
 + (void)setClearCacheOnTerminate:(BOOL)shouldClear;
 
-/**
- * Warning: Only applies to non-fullscreen banners.
- * Preload banners in spesific zones to show instantly when they are needed to be shown.
- * Pass your zone Ids displayed on AMR Dashboard to preload banners.
- * Example usage:
- * @code
- * [AMRSDK preloadBannersWithZoneIds:@[<zoneId1>,<zoneId2>]];
- * @endcode
- * @param zoneIds NSArray with zoneIds string objects.
- * @note Please use AMRBanner @code cacheBanner: @endcode instead.
- */
-
-+ (void)preloadBannersWithZoneIds:(NSArray *)zoneIds __attribute__((deprecated));
-
 /// Get current SDK version
 + (NSString *)SDKVersion;
-
-/// Check if the status bar is hidden
-+ (BOOL)isStatusBarHidden;
-
-/// Check if the networks will initialize
-+ (BOOL)isInitNetworks __attribute__((deprecated));
 
 /**
  * You can optionally provide a unique user id for reporting purposes.
@@ -299,6 +266,11 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)subjectToCCPA:(BOOL)subject;
 
+
++ (BOOL)isStatusBarHidden __attribute__((deprecated));
++ (BOOL)isInitNetworks __attribute__((deprecated));
++ (void)preloadBannersWithZoneIds:(NSArray *)zoneIds __attribute__((deprecated));
++ (void)setStatusBarHidden:(BOOL)isHidden __attribute__((deprecated));
 @end
 
 /**
