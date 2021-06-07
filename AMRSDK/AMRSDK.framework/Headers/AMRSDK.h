@@ -20,6 +20,7 @@
 #import "AMROfferWall.h"
 #import "AMRNativeAdBaseView.h"
 #import "AMRUserExperiment.h"
+#import "AMRRemoteConfigValue.h"
 
 typedef void(^AMRInitCompletionHandler)(AMRError *_Nullable error);
 
@@ -266,6 +267,16 @@ NS_ASSUME_NONNULL_BEGIN
  */
 + (void)subjectToCCPA:(BOOL)subject;
 
+/**
+ * You can optionally use fetchRemoteConfigWithCompletion method to fetch remote config from server.
+ */
++ (void)fetchRemoteConfigWithCompletion:(void(^)(AMRError *))completion;
+
+/**
+ * You can optionally use getConfigForKey method to get remote config value.
+ * * @param key for remote config value.
+ */
++ (nullable AMRRemoteConfigValue *)getConfigForKey:(nonnull NSString *)key;
 
 + (BOOL)isStatusBarHidden __attribute__((deprecated));
 + (BOOL)isInitNetworks __attribute__((deprecated));
