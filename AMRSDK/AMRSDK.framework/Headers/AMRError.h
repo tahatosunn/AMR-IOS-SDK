@@ -50,6 +50,9 @@ typedef NS_ENUM(NSInteger, AMRErrorCode) {
     /** AppId and zoneId does not match. */
     AMRErrorCodeMismatchZoneId = 1088,
     
+    /** Unknown error when try to show ad. */
+    AMRErrorCodeUnknownFailToShow = 1089
+    
 };
 
 @interface AMRError : NSObject

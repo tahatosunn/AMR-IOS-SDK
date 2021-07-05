@@ -20,10 +20,12 @@
 @property UIViewController *viewController;
 /// Width value of banner, default is 320px for 50px, 300px for 250px, 728px for 90px.
 @property (nonatomic) CGFloat bannerWidth;
-/// Custom size for custom native ads
+/// Custom size for custom native ads.
 @property (nonatomic) CGSize customNativeSize;
-/// Custom native ad xib name
+/// Custom native ad xib name.
 @property NSString *customeNativeXibName;
+/// Adaptive banner info.
+@property (readonly) BOOL isAdaptiveEnabled;
 
 /**
  * Create an instance of AMRBanner to show in your application.
@@ -45,6 +47,17 @@
  * @endcode
  */
 - (void)loadBanner;
+
+/**
+ * Start asynchronous banner loading request. Delegate must be set before loading a banner ad.
+ * Example usage:
+ * @code
+ * [banner loadBannerWithTag:@"MY_TAG"];
+ * @endcode
+ * @param tag Distinction value for ads that used in multiple purposes.
+ */
+- (void)loadBannerWithTag:(NSString *)tag;
+
 
 /**
  * Start synchronous banner loading request.

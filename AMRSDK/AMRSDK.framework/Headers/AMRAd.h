@@ -10,9 +10,10 @@
 #import "AMRTypes.h"
 
 @interface AMRAd : NSObject
-@property NSDictionary* networkData;
-@property NSString* zoneId;
+@property NSDictionary *networkData;
+@property NSString *zoneId;
 @property AMRNetworkType networkType;
-@property NSString* networkName;
-@property NSNumber* ecpm;
+@property NSString *networkName;
+@property NSNumber *ecpm;
+@property (readonly) NSString *tag;
 @end
