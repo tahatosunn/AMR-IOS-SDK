@@ -19,6 +19,8 @@
 @property (nonatomic, readonly) BOOL isLoading;
 /// Returns YES if the interstitial is loaded.
 @property (nonatomic, readonly) BOOL isLoaded;
+/// Returns YES if the interstitial is ready to show. (loaded + capping free)
+@property (nonatomic, readonly) BOOL isReadyToShow;
 
 /**
  * Create an instance of AMRInterstitial to show in your application.

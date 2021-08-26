@@ -19,6 +19,8 @@
 @property (nonatomic, readonly) BOOL isLoading;
 /// Returns YES if the rewarded video is loaded.
 @property (nonatomic, readonly) BOOL isLoaded;
+/// Returns YES if the interstitial is ready to show. (loaded + capping free)
+@property (nonatomic, readonly) BOOL isReadyToShow;
 
 /// Parameter to move your custom data.
 @property (nonatomic, strong) NSDictionary *customData;
