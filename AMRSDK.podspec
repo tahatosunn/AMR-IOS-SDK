@@ -1,4 +1,7 @@
 Pod::Spec.new do |s|
+	
+  s.source           = { :git => 'https://github.com/admost/AMR-IOS-SDK.git',
+ 								 :tag => '1.4.79' }
   s.name             = 'AMRSDK'
   s.version          = '1.4.79'
   s.requires_arc     = true
@@ -13,8 +16,6 @@ Pod::Spec.new do |s|
   s.description      = <<-DESC
 Admost Mediation Router is a powerful mediation tool to maximize your ad revenues for your apps and games from all major ad networks.
                        DESC
-  s.source           = { :git => 'https://github.com/admost/AMR-IOS-SDK.git',
- 								 :tag => s.version.to_s }
   s.documentation_url = 'https://admost.github.io/amrios'
   s.platform = :ios
   s.ios.deployment_target = '9.0'
