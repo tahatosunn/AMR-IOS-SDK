@@ -268,6 +268,12 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)subjectToCCPA:(BOOL)subject;
 
 /**
+ * You can optionally use updateATTStatus method to set ATT status after permisson request.
+ * If you do not provide this information AMRSDK will use its own methods.
+ */
++ (void)updateATTStatus;
+
+/**
  * You can optionally use fetchRemoteConfigWithCompletion method to fetch remote config from server.
  */
 + (void)fetchRemoteConfigWithCompletion:(void(^)(AMRError *))completion;
