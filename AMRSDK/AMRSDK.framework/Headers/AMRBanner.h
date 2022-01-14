@@ -26,6 +26,8 @@
 @property NSString *customeNativeXibName;
 /// Adaptive banner info.
 @property (readonly) BOOL isAdaptiveEnabled;
+/// Actual size of bannerView object after banner is loaded.
+@property (nonatomic, assign, readonly) CGSize bannerSize;
 
 /**
  * Create an instance of AMRBanner to show in your application.
