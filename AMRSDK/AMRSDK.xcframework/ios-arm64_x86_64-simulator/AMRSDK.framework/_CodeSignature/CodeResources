@@ -62,7 +62,7 @@
 		</data>
 		<key>Headers/AMRTypes.h</key>
 		<data>
-		V0q2vMZ/2IplCdHx4jG6H0m6FTk=
+		59BT1Iq66q3VTDkliXiPmyHLq5M=
 		</data>
 		<key>Headers/AMRUserExperiment.h</key>
 		<data>
@@ -70,7 +70,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		y1flXPrYp5yLeF2+2ITfl6ahnbg=
+		qB8DZTnCnzt/CFVPSUKSQGMyf4E=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -237,11 +237,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			V0q2vMZ/2IplCdHx4jG6H0m6FTk=
+			59BT1Iq66q3VTDkliXiPmyHLq5M=
 			</data>
 			<key>hash2</key>
 			<data>
-			8Dy2eCOCiIvgyd5pH2/zC9JmpWxBIn5eR9ovPZ7Yb0o=
+			xk/PUqiARiefW9VHsC6QLehQlO50fgwQ1MZZAC2/rSA=
 			</data>
 		</dict>
 		<key>Headers/AMRUserExperiment.h</key>
