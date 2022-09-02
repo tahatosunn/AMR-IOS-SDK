@@ -28,8 +28,16 @@ Admost Mediation Router is a powerful mediation tool to maximize your ad revenue
     'VALID_ARCHS[sdk=iphonesimulator*]' => 'x86_64 arm64'
   }
 
-  s.vendored_frameworks = 'AMRSDK/AMRSDK.xcframework'
-  s.resources = ['AMRSDK/AMRResources.bundle']
   s.dependency 'KokteylLog', '~> 1.1.1'
-  s.dependency 'AMRAdapterAFA', '~> 1.3.0'
+  
+  s.subspec 'Core' do |cr|
+    cr.vendored_frameworks = 'AMRSDK/AMRSDK.xcframework'
+    cr.resources = ['AMRSDK/AMRResources.bundle']
+  end
+
+  s.subspec 'AFA' do |af|
+    af.vendored_frameworks = 'AMRSDK/AMRSDK.xcframework', 'AFA/AMRAdapterAFA.xcframework'
+    af.resources = ['AMRSDK/AMRResources.bundle']
+    af.dependency 'AdmostFairAds', '~> 1.3.0'
+  end
 end
