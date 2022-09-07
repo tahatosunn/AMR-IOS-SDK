@@ -160,6 +160,9 @@ typedef NS_ENUM(NSInteger, AMRNetworkType){
     /// PREMIUM
     AMRNetworkTypePremium,
     
+    /// PUBMATIC
+    AMRNetworkTypePubMatic,
+    
     /// PUBNATIVE
     AMRNetworkTypePubNative,
 
