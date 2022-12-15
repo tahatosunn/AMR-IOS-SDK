@@ -276,7 +276,7 @@ NS_ASSUME_NONNULL_BEGIN
 /**
  * You can optionally use fetchRemoteConfigWithCompletion method to fetch remote config from server.
  */
-+ (void)fetchRemoteConfigWithCompletion:(void(^)(AMRError *))completion;
++ (void)fetchRemoteConfigWithCompletion:(void(^)(AMRError * _Nullable))completion;
 
 /**
  * You can optionally use getConfigForKey method to get remote config value.
