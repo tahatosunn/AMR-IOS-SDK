@@ -29,7 +29,8 @@ Admost Mediation Router is a powerful mediation tool to maximize your ad revenue
   }
 
   s.dependency 'KokteylLog', '~> 1.1.1'
-  
+  s.swift_versions = ['5']
+
   s.subspec 'Core' do |cr|
     cr.vendored_frameworks = 'AMRSDK/AMRSDK.xcframework'
     cr.resources = ['AMRSDK/AMRResources.bundle']
@@ -39,6 +40,5 @@ Admost Mediation Router is a powerful mediation tool to maximize your ad revenue
     af.vendored_frameworks = 'AMRSDK/AMRSDK.xcframework', 'AFA/AMRAdapterAFA.xcframework'
     af.resources = ['AMRSDK/AMRResources.bundle']
     af.dependency 'AdmostFairAds', '~> 1.3.0'
-    af.swift_versions = ['5']
   end
 end
