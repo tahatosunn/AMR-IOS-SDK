@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>.DS_Store</key>
+		<data>
+		JXBKI1YcCCa+7CsrjzybJ4j1boQ=
+		</data>
 		<key>Headers/AMRAd.h</key>
 		<data>
 		S6YPj6McsfcwNDDHxJtzrRUD46w=
@@ -70,7 +74,7 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		v4PjPPV/7FZ/wRWP/UB42jitHR4=
+		peinC+USBz4BuopUiJD4WdXpGmU=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
