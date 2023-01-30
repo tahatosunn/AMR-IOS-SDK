@@ -2,7 +2,6 @@ Pod::Spec.new do |s|
   s.name             = 'AMRSDK'
   s.version          = '1.5.28'
   s.requires_arc     = true
-  
   s.license          = { :type => 'Copyright', :text => <<-LICENSE
 									Copyright 2016
 									Admost Mediation Limited.
