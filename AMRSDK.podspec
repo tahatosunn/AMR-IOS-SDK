@@ -1,4 +1,4 @@
-aPod::Spec.new do |s|
+Pod::Spec.new do |s|
   s.name             = 'AMRSDK'
   s.version          = '1.5.28'
   s.requires_arc     = true
@@ -30,7 +30,6 @@ Admost Mediation Router is a powerful mediation tool to maximize your ad revenue
 
   s.dependency 'KokteylLog', '~> 1.1.1'
   s.swift_versions = ['5']
-
   s.subspec 'Core' do |cr|
     cr.vendored_frameworks = 'AMRSDK/AMRSDK.xcframework'
     cr.resources = ['AMRSDK/AMRResources.bundle']
