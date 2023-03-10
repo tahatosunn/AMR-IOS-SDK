@@ -201,7 +201,7 @@ typedef NS_ENUM(NSInteger, AMRNetworkType){
 
     /// APPSAMURAI
     AMRNetworkTypeAppsamurai,
-
+    
     /// MINTEGRAL
     AMRNetworkTypeMintegral,
 
@@ -260,7 +260,25 @@ typedef NS_ENUM(NSInteger, AMRNetworkType){
     AMRNetworkTypeVrtcal,
 
     /// TEADS
-    AMRNetworkTypeTeads
+    AMRNetworkTypeTeads,
+    
+    /// MAKROO
+    AMRNetworkTypeMakroo,
+    
+    /// APPBRODA
+    AMRNetworkTypeAppbroda,
+    
+    /// ADDAPPTR
+    AMRNetworkTypeAddapptr,
+    
+    /// POTENSUS
+    AMRNetworkTypePotensus,
+    
+    /// ADOPS
+    AMRNetworkTypeAdops,
+    
+    /// PREMIUMADS
+    AMRNetworkTypePremiumAds
 };
 
 typedef NS_ENUM(NSInteger, AMRReachabilityNetworkStatus){
