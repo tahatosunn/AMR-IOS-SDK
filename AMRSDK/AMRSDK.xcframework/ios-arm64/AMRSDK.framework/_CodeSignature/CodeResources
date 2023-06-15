@@ -24,6 +24,10 @@
 		<data>
 		qm6I1ucmDKFuv9a2Kuv0zvaM02Y=
 		</data>
+		<key>Headers/AMRExternalRevenue.h</key>
+		<data>
+		ANutHaPlXh9qaCG/+lrWFkCmuxs=
+		</data>
 		<key>Headers/AMRInterstitial.h</key>
 		<data>
 		gDa8lj7CbkTjJMrrEKtYJDxXnS0=
@@ -58,11 +62,11 @@
 		</data>
 		<key>Headers/AMRSDK.h</key>
 		<data>
-		GIRog3b04MxzT6KVNy7Oe6fq7Mc=
+		uoSQKhRZLdnvpsnxNzmbMZBm1NM=
 		</data>
 		<key>Headers/AMRTypes.h</key>
 		<data>
-		ScTe4G8mljfYGFjIcndhzig3SBo=
+		NLocNmADNoSGUmX+Y2OVJSnpEIk=
 		</data>
 		<key>Headers/AMRUserExperiment.h</key>
 		<data>
@@ -70,11 +74,11 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		SFJPavNbhYieBcdzdjx3Yclbvjs=
+		d+65eEDP5VX4GfLm/B1vVamoxz8=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		mUIf1FEmODePqZ5hlUxDb0w/P2k=
+		+8ZkODY+sqo12LY44fs4SRpacOU=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -132,6 +136,17 @@
 			<key>hash2</key>
 			<data>
 			hRdYe3UvV++Ni0rNAXOUGcsH0TFvHiBuc03X12i85bs=
+			</data>
+		</dict>
+		<key>Headers/AMRExternalRevenue.h</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			ANutHaPlXh9qaCG/+lrWFkCmuxs=
+			</data>
+			<key>hash2</key>
+			<data>
+			wmnKBy25gf2dqsed0/+V6lGIyWurPW7LWeDQWkVys2E=
 			</data>
 		</dict>
 		<key>Headers/AMRInterstitial.h</key>
@@ -226,22 +241,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			GIRog3b04MxzT6KVNy7Oe6fq7Mc=
+			uoSQKhRZLdnvpsnxNzmbMZBm1NM=
 			</data>
 			<key>hash2</key>
 			<data>
-			JO+KSUB4sX+ZLWCBlQ+0ERBINd2whs4sQS9+2FPo97Q=
+			qPyg21Cj0j8QjE+aeiCvqZOeplheIXNLUiovrYVKSkA=
 			</data>
 		</dict>
 		<key>Headers/AMRTypes.h</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			ScTe4G8mljfYGFjIcndhzig3SBo=
+			NLocNmADNoSGUmX+Y2OVJSnpEIk=
 			</data>
 			<key>hash2</key>
 			<data>
-			azyoPH5mxitwUjX+QRSLl5G9txDbYtpDVpaS1SwtDCo=
+			Jf4LJVlmkn0ovvl1dQX2WhF2toqRLmx3pne6DdmWK3Q=
 			</data>
 		</dict>
 		<key>Headers/AMRUserExperiment.h</key>
@@ -259,11 +274,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			mUIf1FEmODePqZ5hlUxDb0w/P2k=
+			+8ZkODY+sqo12LY44fs4SRpacOU=
 			</data>
 			<key>hash2</key>
 			<data>
-			wbTXVrAT2n0QTDt+obiUZdv23v4H/gVWLmCdvP7oGYw=
+			sGkXXGk9d6TwAjMFdLrR/SPshY1DpsIvLBT445Mfs3U=
 			</data>
 		</dict>
 	</dict>

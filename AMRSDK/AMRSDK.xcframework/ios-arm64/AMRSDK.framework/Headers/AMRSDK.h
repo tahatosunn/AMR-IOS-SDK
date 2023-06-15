@@ -21,6 +21,7 @@
 #import "AMRNativeAdBaseView.h"
 #import "AMRUserExperiment.h"
 #import "AMRRemoteConfigValue.h"
+#import "AMRExternalRevenue.h"
 
 typedef void(^AMRInitCompletionHandler)(AMRError *_Nullable error);
 
@@ -277,6 +278,11 @@ NS_ASSUME_NONNULL_BEGIN
  * You can optionally use fetchRemoteConfigWithCompletion method to fetch remote config from server.
  */
 + (void)fetchRemoteConfigWithCompletion:(void(^)(AMRError * _Nullable))completion;
+
+/**
+ * You can optionally use trackExternalAdRevenue method to send your external ad network revenues.
+ */
++ (void)trackExternalAdRevenue:(AMRExternalRevenue *)externalRevenue;
 
 /**
  * You can optionally use getConfigForKey method to get remote config value.

@@ -281,7 +281,10 @@ typedef NS_ENUM(NSInteger, AMRNetworkType){
     AMRNetworkTypeAdops,
     
     /// PREMIUMADS
-    AMRNetworkTypePremiumAds
+    AMRNetworkTypePremiumAds,
+    
+    /// YABBI
+    AMRNetworkTypeYabbi
 };
 
 typedef NS_ENUM(NSInteger, AMRReachabilityNetworkStatus){
