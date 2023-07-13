@@ -11,41 +11,28 @@ let package = Package(
     products: [
         .library(
             name: "AMRSDK",
-            targets: ["AMRSDK"]
+            targets: ["AMRSDKTarget"]
         )
     ],
     dependencies: [
-//        .package(url: "https://github.com/tahatosunn/KOKTEYL-LOG-SDK.git", from: "1.1.1"),
-//        .package(url: "https://github.com/admost/AdmostFairAds.git", from: "1.3.0")
+        //        .package(url: "https://github.com/tahatosunn/KOKTEYL-LOG-SDK.git", from: "1.1.1"),
+        //        .package(url: "https://github.com/admost/AdmostFairAds.git", from: "1.3.0")
     ],
     targets: [
         .target(
-            name: "AMRSDK",
+            name: "AMRSDKTarget",
             dependencies: [
-//                "KokteylLog",
-//                "AdmostFairAds"
+                .target(name: "AMRSDK"),
+                .target(name: "AMRAdapterAFA"),
+                .target(name: "KKLog")
             ],
-            path: "AMRSDK",
+            path: "",
             resources: [
-                .process("AMRResources.bundle")
-            ],
-            cSettings: [
-                .headerSearchPath("AMRSDK/include"),
-                .unsafeFlags(["-ObjC", "-lc++"])
-            ],
-            linkerSettings: [
-                .linkedLibrary("z")
+                .process("AMRSDK/AMRResources.bundle")
             ]
         ),
-//        .target(
-//            name: "AMRAdapterAFA",
-//            dependencies: [
-//                "AMRSDK"
-//            ],
-//            path: "AFA",
-//            resources: [
-//                .process("AMRResources.bundle")
-//            ]
-//        )
+        .binaryTarget(name: "AMRSDK", path:"AMRSDK/AMRSDK.xcframework"),
+        .binaryTarget(name: "KKLog", path:"KKLog.xcframework"),
+        .binaryTarget(name: "AMRAdapterAFA", path: "AFA/AMRAdapterAFA.xcframework"),
     ]
 )
