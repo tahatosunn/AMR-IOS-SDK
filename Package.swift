@@ -23,7 +23,7 @@ let package = Package(
             ],
             exclude: ["AMRSDK/AMRResources.bundle/TestSuite.storyboardc/Info.plist", "AMRSDK/AMRResources.bundle/Info.plist"],
             resources: [
-                .process("AMRSDK/AMRResources.bundle")
+                .copy("AMRSDK/AMRResources.bundle")
             ]),
         .binaryTarget(name: "AMRSDK", path:"AMRSDK/AMRSDK.xcframework"),
         .binaryTarget(name: "KKLog", path:"KKLog.xcframework"),
